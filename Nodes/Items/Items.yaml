@@ -99,3 +99,40 @@ Children:
         Value: 110.0
     - Name: RuntimeNetLogic1
       Type: NetLogic
+- Name: Folder1
+  Type: ObjectLibraryItem
+  Children:
+  - Name: Folder1
+    Type: FolderType
+    Children:
+    - Name: Object1
+      Type: BaseObjectType
+    - Name: CircularGauge1
+      Id: g=a6675c2656013cfaa0182d8a88a83816
+      Supertype: CircularGauge
+      ReferenceType: HasComponent
+      Children:
+      - Name: Value
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: MinValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 0.0
+      - Name: MaxValue
+        Type: BaseDataVariableType
+        DataType: Float
+        Value: 100.0
+      - Name: WarningZones
+        Type: BaseObjectType
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 210.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 210.0
